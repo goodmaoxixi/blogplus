@@ -1,0 +1,23 @@
+<h2>Post:</h2>
+<p>
+  <strong>Title: </strong><%= @post.title %><br />
+  <strong>Text: </strong><%= @post.text %><br />
+</p>
+
+<!-- Show the comments using partial _comment.html.erb --> 
+<h3>Comments:</h3>
+<table>
+  <tr>
+    <th>Commenter</th>
+    <th>Comment</th>
+    <th>Edit</th>
+    <th>Destroy</th>
+  </tr>
+  <%= render @post.comments %>
+</table>
+
+<!-- Create comments --> 
+<h3>Add a comment:</h3>
+<%= render "comments/form" %>
+
+<p><%= link_to 'Back', posts_path %> | <%= link_to 'Edit', edit_post_path(@post) %></p>

@@ -1,0 +1,5 @@
+1. Nested resources with independent views in Ruby on Rails
+http://blog.8thcolor.com/en/2011/08/nested-resources-with-independent-views-in-ruby-on-rails/
+
+2. Learn REST: A Tutorial
+http://rest.elkstein.org/
