@@ -9,7 +9,8 @@ Enhancements:
 * Add some specification on page app/views/welcome/index.html.erb;
 * Use HTML table to display both the posts and the comments in the view;
 * Set the HTML text area to display in 6 rows;
-* Add comment editing support.
+* Add comment editing support;
+* Add a comment counter (index) using the partial's undocumented method _counter (0-indexed).
 
 Miscellaneous:
 -------

@@ -8,11 +8,14 @@
 <h3>Comments:</h3>
 <table>
   <tr>
+	<th>No.</th>
     <th>Commenter</th>
     <th>Comment</th>
     <th>Edit</th>
     <th>Destroy</th>
   </tr>
+  <!-- Comment count. Either will do. -->
+  <!-- render partial: "comments/comment", collection: @post.comments >
   <%= render @post.comments %>
 </table>
 
