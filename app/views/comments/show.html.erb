@@ -1,7 +1,7 @@
 <h2>Edit a comment</h2>
 <p>Haha, please meet me in file <b>app/views/comments/show.html.erb</b>, <b style="color:red">NOT</b> in edit.html.erb! In fact, there's no edit.html.erb existing in folder app/views/comments.</p>
 
-<!-- This is very weird: form_for([@comment.post, @comment]) -->
+<!-- This is very wierd: form_for([@comment.post, @comment]) -->
 <%= form_for([@comment.post, @comment]) do |f| %>
   <p>
     <%= f.label :commenter %><br />
