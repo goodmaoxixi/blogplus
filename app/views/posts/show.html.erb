@@ -14,12 +14,12 @@
     <th>Edit</th>
     <th>Destroy</th>
   </tr>
-  <!-- Comment count. Either will do. -->
+  <!-- Comment count. Either will do. As the render method iterates over the @post.comments collection, it assigns each comment to a local variable named the same as the partial, in this case comment which is then available in the partial for us to show. -->
   <!-- render partial: "comments/comment", collection: @post.comments >
   <%= render @post.comments %>
 </table>
 
-<!-- Create comments --> 
+<!-- Create comments with partial comments/form --> 
 <h3>Add a comment:</h3>
 <%= render "comments/form" %>
 
