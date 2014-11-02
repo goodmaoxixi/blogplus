@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Blogdgl::Application.config.secret_key_base = '984c283e93eb22fd62e162c7d090f83fed592d47e75777b813059b0ad65ac45cf1fe140c7ace86a47d88d488cc662534c8062aa93a443287570ce2d8622c0fa2'
+Blogplus::Application.config.secret_key_base = '984c283e93eb22fd62e162c7d090f83fed592d47e75777b813059b0ad65ac45cf1fe140c7ace86a47d88d488cc662534c8062aa93a443287570ce2d8622c0fa2'

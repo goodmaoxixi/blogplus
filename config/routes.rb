@@ -1,4 +1,4 @@
-Blogdgl::Application.routes.draw do
+Blogplus::Application.routes.draw do
   get "welcome/index"
 
   # The priority is based upon order of creation: first created -> highest priority.

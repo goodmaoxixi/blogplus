@@ -15,6 +15,6 @@ Enhancements:
 
 Miscellaneous:
 -------
-* The original user/password is in file blogdgl_user_password.txt.
+* The original user/password is in file blogplus_user_password.txt.
 * Good reference articles are listed in file Nested-resources-with-independent-views-in-Ruby-on-Rails.txt.
 * Both the above files reside in the project root folder.

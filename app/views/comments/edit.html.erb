@@ -1,5 +1,5 @@
-<h2>Show a Comment</h2>
-<p>Find me at app/views/comments/show.html.erb</p>
+<h3>Edit a Comment</h3>
+<p>Find me at app/views/comments/edit.html.erb</p>
 
 <!-- This is very wierd: form_for([@comment.post, @comment]) -->
 <%= form_for([@comment.post, @comment]) do |f| %>
@@ -11,9 +11,11 @@
     <%= f.label :body %><br />
     <%= f.text_area :body, rows: 6 %>
   </p>
+  <p>
+    <%= f.submit %>
+  </p>
 <% end %>
 
 <div>
   <p><%= link_to 'Back', post_path(@post) %> | <%= link_to "Home", controller: "welcome" %></p>
 </div>
-

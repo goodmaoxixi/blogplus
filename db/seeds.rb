@@ -27,5 +27,3 @@ comment2_for_post2 = Comment.create!(post_id: post2.id, commenter: "Katie Bret",
 post3 = Post.create!(:title => "Mike's Post", :text => "Hello, Rails! You're REALLY awesome.")
 comment1_for_post3 = Comment.create!(post_id: post3.id, commenter: "Andy Williams", body: "Moonriver, wide than a mile.")
 comment2_for_post3 = Comment.create!(post_id: post3.id, commenter: "simon and garfunkel", body: "Are you going to the Scarborough Fair")
-
-
