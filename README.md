@@ -6,6 +6,7 @@ blogplus
 
 Enhancements:
 -------
+* Seed the parent-child tables(See db/seeds.rb);
 * Add some specification on page app/views/welcome/index.html.erb;
 * Use HTML table to display both the posts and the comments in the view;
 * Set the HTML text area to display in 6 rows;

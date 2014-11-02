@@ -6,14 +6,28 @@
   <ol>
     <li>How to create model, view, controller (MVC) step by step;</li>
     <li>How to connect parent and child tables (posts-comments);</li>
-    <li>How to edit nested attributes in the child table (the comments table).</li>
+    <li>How to edit nested attributes in the child table (the comments table);</li>
+    <li>How to seed the parent-child tables(See db/seeds.rb). </li>
   </ol>
-  <p>Note: The original tutorial on <a href="http://guides.rubyonrails.org/">Ruby on Rails Guides</a> only shows how to destroy a comment, while this demo adds the functionality of editing a comment</p>
+  <p>Note: The original tutorial on <a href="http://guides.rubyonrails.org/">Ruby on Rails Guides</a> only shows how to destroy a comment, while this demo adds the functionality of editing a comment. </p>
+  <p>TODO: Why app/views/comments/show.html.erb is used when editing the comment?</p>
 </div>
 
-<div>The user/password are test/test. It can be modified after signing in.</div>
-
 <div>
+	<h3>Notes:</h3>
+	<ol>
+	  <li>The user/password are test/test. It can be modified after signing in.</li>
+	</ol>
+</div>
+
+<hr>
+<div>
+  <h3>Change Histroy:</h3>
+  <p>20141102: Add the seeding to support the parent-child tables, posts-comments in this case.</p>
+</div>
+
+<hr>
+<div>
+  <p><%= link_to "My Blogs", controller: "posts" %></p>	
   <p>Author: dgl. Oct. 31, 2014 Fri.</p>
-  <p><%= link_to "My Blogs", controller: "posts" %></p>
 </div>
