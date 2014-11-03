@@ -1,7 +1,7 @@
 blogplus
 ========
 
-* An enhanced RoR demo based on the blog example on RailsGuides on Rails version 4.0.3 &amp; Ruby 2.1.0p0.
+* An enhanced RoR demo based on the blog example from RailsGuides (Rails 4.0.3.
 * RailsGuides is available here: [.RailsGuides](http://guides.rubyonrails.org/)
 
 Enhancements:
@@ -10,7 +10,7 @@ Enhancements:
 * Add some specification on page app/views/welcome/index.html.erb;
 * Use HTML table to display both the posts and the comments in the view;
 * Set the HTML text area to display in 6 rows;
-* Add comment editing support;
+* Add comment showing/editing support;
 * Add a comment counter (index) using the partial's undocumented method _counter (0-indexed);
 * The links are clearer than the original version, such as 'Back to Posts' instead of 'Back';
 * Add more comments and pointers where necessary.

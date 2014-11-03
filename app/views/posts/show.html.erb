@@ -16,7 +16,12 @@
     <th></th>
     <th></th>
   </tr>
-  <!-- Comment count. Either will do. As the render method iterates over the @post.comments collection, it assigns each comment to a local variable named the same as the partial, in this case comment which is then available in the partial for us to show. -->
+  <!-- 
+    RailsGuides: As the render method iterates over the @post.comments collection,
+    it assigns each comment to a local variable named the same as the partial,
+    in this case comment which is then available in the partial for us to show.
+  -->
+  <!-- Comment count. Either will do. -->
   <!-- render partial: "comments/comment", collection: @post.comments -->
   <%= render @post.comments %>
 </table>

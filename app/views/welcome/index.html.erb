@@ -2,21 +2,27 @@
 <p>Now is <%= @time %></p>
 
 <div>
-  <p>Using a post and its comments scenario, this demo shows:</p>
+  <p>Using a post and its comments scenario, this shows:</p>
   <ol>
-    <li>How to create model, view, controller (MVC) step by step;</li>
-    <li>How to connect parent and child tables (posts-comments);</li>
-    <li>How to edit nested attributes in the child table (the comments table);</li>
-    <li>How to seed the parent-child tables(See db/seeds.rb). </li>
+    <li>How to create model, view, controller (MVC) step by step (See the original tutorial);</li>
+    <li>How to connect parent and child tables (posts-comments)(See the original tutorial);</li>
+    <li>How to show/edit nested attributes in the child table, i.e., the comments table (+);</li>
+    <li>How to seed the parent-child tables(See db/seeds.rb) (+); </li>
+    <li>How to show the posts and comments in HTML tables.</li>
   </ol>
-  <p>Note: The original tutorial on <a href="http://guides.rubyonrails.org/">Ruby on Rails Guides</a> only shows how to destroy a comment, while this demo adds the functionality of editing a comment. </p>
-  </div>
+  
+  <p>Note: + denotes functionality addition to the original version. The original tutorial on <a href="http://guides.rubyonrails.org/">Ruby on Rails Guides</a> shows how to create/destroy a comment, while this demo adds the functionality to show and edit a comment. It can be used as a prototype to develop a real app.</p>
+</div>
 
 <div>
 	<h3>Notes:</h3>
 	<ol>
-	  <li>The user/password are test/test. It is built into file app/controllers/posts_controller.</li>
+	  <li>The user/password are test/test. It is built into file app/controllers/posts_controller.rb.</li>
 	</ol>
+</div>
+
+<div>
+  <p><%= link_to "My Blogs", controller: "posts" %></p>	
 </div>
 
 <hr>
@@ -25,8 +31,6 @@
   <p>20141102: Add the seeding to support the parent-child tables, posts-comments in this case.</p>
 </div>
 
-<hr>
 <div>
-  <p><%= link_to "My Blogs", controller: "posts" %></p>	
   <p>Author: dgl. Oct. 31, 2014 Fri.</p>
 </div>

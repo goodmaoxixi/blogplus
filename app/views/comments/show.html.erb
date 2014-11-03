@@ -1,19 +1,16 @@
 <h2>Show a Comment</h2>
 <p>Find me at app/views/comments/show.html.erb</p>
 
-<!-- This is very wierd: form_for([@comment.post, @comment]) -->
-<%= form_for([@comment.post, @comment]) do |f| %>
-  <p>
-    <%= f.label :commenter %><br />
-    <%= f.text_field :commenter %>
+<!-- See http://blog.8thcolor.com/en/2011/08/nested-resources-with-independent-views-in-ruby-on-rails/ -->
+<p>
+    <b>Commenter:</b>
+    <%= @comment.commenter %>
   </p>
   <p>
-    <%= f.label :body %><br />
-    <%= f.text_area :body, rows: 6 %>
+    <b>Body:</b>
+    <%= @comment.body %>
   </p>
-<% end %>
 
 <div>
   <p><%= link_to 'Back to Post', post_path(@post) %> | <%= link_to "Home", controller: "welcome" %></p>
 </div>
-
