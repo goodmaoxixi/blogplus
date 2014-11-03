@@ -11,7 +11,9 @@ Enhancements:
 * Use HTML table to display both the posts and the comments in the view;
 * Set the HTML text area to display in 6 rows;
 * Add comment editing support;
-* Add a comment counter (index) using the partial's undocumented method _counter (0-indexed).
+* Add a comment counter (index) using the partial's undocumented method _counter (0-indexed);
+* The links are more clear than the original version, such as 'Back to Posts' instead of 'Back';
+* Add more comments and pointers where necessary.
 
 Miscellaneous:
 -------
