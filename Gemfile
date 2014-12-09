@@ -49,4 +49,8 @@ end
 # https://github.com/bernat/best_in_place (*)
 gem 'jquery-ui-rails'
 #gem 'best_in_place', github: 'bernat/best_in_place'
-gem 'best_in_place'
+#gem 'best_in_place'
+
+# Bootstrap Editable Rails: In-place editing with Twitter Bootstrap for Rails 3/4
+# See https://github.com/bootstrap-ruby/bootstrap-editable-rails
+gem 'bootstrap-editable-rails'
