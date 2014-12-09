@@ -26,10 +26,12 @@ class CommentsController < ApplicationController
         #format.html { redirect_to [@comment.post, @comment], notice: 'Comment was successfully updated.' }
         # To the comment list page
         format.html { redirect_to @comment.post, notice: 'Comment was successfully updated.' }
-        format.json { head :no_content }
-      else
+        #format.json { head :OK }
+        format.json { respond_with_bip(@comment) }
+     else
         format.html { render action: 'edit' }
-        format.json { render json: @comment.errors, status: :unprocessable_entity }
+        #format.json { render json: @comment.errors, status: :unprocessable_entity }
+        format.json { respond_with_bip(@comment) }
       end
     end
   end

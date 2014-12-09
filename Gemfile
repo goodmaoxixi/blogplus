@@ -43,3 +43,10 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# In-place editing support added by DGL on 20141209
+# See http://www.datatables.net/forums/discussion/17213/table-editing-with-best-in-place-in-ruby-on-rails
+# https://github.com/bernat/best_in_place (*)
+gem 'jquery-ui-rails'
+#gem 'best_in_place', github: 'bernat/best_in_place'
+gem 'best_in_place'
