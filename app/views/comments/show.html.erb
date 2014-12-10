@@ -8,7 +8,8 @@
   </p>
   <p>
     <b>Body:</b>
-    <%= @comment.body %>
+    <!-- %= @comment.body % -->
+    <%= best_in_place @comment, :body,  :type => :textarea %> 
   </p>
 
 <div>
