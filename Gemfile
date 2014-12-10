@@ -43,3 +43,8 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# Install the Ruby Gems for Bootstrap. Added by DGL on Dec. 10, 2014 Wed.
+# See http://www.gotealeaf.com/blog/integrating-rails-and-bootstrap-part-1/
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
