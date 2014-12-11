@@ -19,8 +19,9 @@
 //= require bootstrap-sprockets
 //= require_tree .
 
+// Create a anonymous function
 $(document).ready(function() {
-    //toggle popup/inline mode
+    // Toggle popup/inline mode
     $.fn.editable.defaults.mode = 'popup';
     //$.fn.editable.defaults.mode = 'inline';
     
@@ -38,10 +39,9 @@ $(document).ready(function() {
             {value: 2, text: 'status 2'},
             {value: 3, text: 'status 3'}
         ]
-        /*
+ 
         //uncomment these lines to send data on server
-        ,pk: 1
+        ,pk: 2
         ,url: '/post'
-        */
     });
 });
