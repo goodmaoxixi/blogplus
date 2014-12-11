@@ -44,13 +44,7 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-# In-place editing support added by DGL on 20141209
-# See http://www.datatables.net/forums/discussion/17213/table-editing-with-best-in-place-in-ruby-on-rails
-# https://github.com/bernat/best_in_place (*)
-gem 'jquery-ui-rails'
-#gem 'best_in_place', github: 'bernat/best_in_place'
-#gem 'best_in_place'
-
-# Bootstrap Editable Rails: In-place editing with Twitter Bootstrap for Rails 3/4
-# See https://github.com/bootstrap-ruby/bootstrap-editable-rails
-gem 'bootstrap-editable-rails'
+# Install the Ruby Gems for Bootstrap. Added by DGL on Dec. 10, 2014 Wed.
+# See http://www.gotealeaf.com/blog/integrating-rails-and-bootstrap-part-1/
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
