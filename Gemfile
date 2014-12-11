@@ -48,3 +48,7 @@ end
 # See http://www.gotealeaf.com/blog/integrating-rails-and-bootstrap-part-1/
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
+
+# In-place editing with Twitter Bootstrap for Rails 3/4
+# See https://github.com/bootstrap-ruby/bootstrap-editable-rails
+gem 'bootstrap-editable-rails'

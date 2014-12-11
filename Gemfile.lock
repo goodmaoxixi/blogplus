@@ -28,6 +28,8 @@ GEM
     arel (4.0.2)
     autoprefixer-rails (4.0.2.1)
       execjs
+    bootstrap-editable-rails (0.0.7)
+      railties (>= 3.1)
     bootstrap-sass (3.2.0.2)
       sass (~> 3.2)
     builder (3.1.4)
@@ -48,8 +50,6 @@ GEM
     jquery-rails (3.1.1)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
-    jquery-ui-rails (4.2.0)
-      railties (>= 3.2.16)
     json (1.8.1)
     mail (2.5.4)
       mime-types (~> 1.16)
@@ -113,16 +113,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-<<<<<<< HEAD
   autoprefixer-rails
-  bootstrap-sass (~> 3.2.0)
-=======
   bootstrap-editable-rails
->>>>>>> 821c4662f2d2499000de42ece071bb9b79672c64
+  bootstrap-sass (~> 3.2.0)
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails
-  jquery-ui-rails
   rails (= 4.0.3)
   sass-rails (~> 4.0.0)
   sdoc
