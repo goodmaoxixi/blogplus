@@ -15,11 +15,11 @@
   <% @posts.each do |post| %>
     <tr>
         <td>
-          <a href="#" data-xeditable="true" data-pk="<%= post.id %>" data-model="post" data-name="title" data-url="<%= post_url(post) %>" data-title="Post Title"><%= post.title %></a>
+          <a href="#" data-xeditable="true" data-pk="<%= post.id %>" data-model="post" data-name="title" data-url="<%= post_url(post) %>" data-title="Post Title"><font color="000000"><%= post.title %></font></a>
         </td>
 
       <td>
-          <a href="#" data-xeditable="true" data-pk="<%= post.id %>" data-model="post" data-name="text" data-url="<%= post_url(post) %>" data-title="Post Text"><%= post.text %></a>
+          <a href="#" data-xeditable="true" data-pk="<%= post.id %>" data-model="post" data-name="text" data-url="<%= post_url(post) %>" data-title="Post Text"><font color="000000"><%= post.text %></font></a>
 	  </td>
 	  
       <td><%= link_to 'Show', post %></td>
