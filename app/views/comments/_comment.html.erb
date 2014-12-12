@@ -5,7 +5,11 @@
     from inside each partial using the partial name appended with _counter, which starts from 0.
   -->
   <td><%= comment_counter + 1 %></td>
-  <td><%= comment.commenter %></td>
+  <td>
+	  <!-- %= comment.commenter % -->
+      <a href="#" data-xeditable="true" data-pk="<%= comment.id %>" data-model="comment" data-name="commenter" data-url="<%= post_comment_path(@post, comment) %>" data-title="Commenter"><%= comment.commenter %></a>
+  </td>
+  
   <td><%= comment.body %></td>
   <!-- Either post_comment_path(@post, comment) or [comment.post, comment] works. -->
   <td><%= link_to 'Show' ,  [comment.post, comment] %></td> 

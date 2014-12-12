@@ -30,13 +30,17 @@ class PostsController < ApplicationController
     #@post = Post.find(params[:id]) # replaced by set_post
   end
 
+  # PATCH/PUT /posts/1
+  # PATCH/PUT /posts/1.json
   def update
-    #@post = Post.find(params[:id]) # replaced by set_post
-    #if @post.update(params[:post].permit(:title, :text))
-    if @post.update(post_params)    
-      redirect_to @post
-    else
-      render 'edit'
+    respond_to do |format|
+      if @post.update(post_params)
+        format.html { redirect_to @post, notice: 'Post was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: 'edit' }
+        format.json { render json: @post.errors, status: :unprocessable_entity }
+      end
     end
   end
 

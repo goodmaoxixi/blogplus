@@ -43,3 +43,17 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# Install the Ruby Gems for Bootstrap. Added by DGL on Dec. 10, 2014 Wed.
+# See http://www.gotealeaf.com/blog/integrating-rails-and-bootstrap-part-1/
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
+
+# In-place editing with Twitter Bootstrap for Rails 3/4
+# See https://github.com/bootstrap-ruby/bootstrap-editable-rails
+# Failed to integrate on Dec. 11, 2014 Thu.
+#gem 'bootstrap-editable-rails'
+
+# Try this on Dec. 11, 2014 Thu with success.
+# See https://github.com/klenis/bootstrap-x-editable-rails-demo
+gem 'bootstrap-x-editable-rails'
