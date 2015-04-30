@@ -1,6 +1,6 @@
 <h1>Listing posts</h1>
 
-<table class="table">
+<table class="table table-condensed">
   <thead>
   <tr>
     <th>Title</th>
@@ -22,14 +22,28 @@
           <a href="#" data-xeditable="true" data-pk="<%= post.id %>" data-model="post" data-name="text" data-url="<%= post_url(post) %>" data-title="Post Text"><font color="000000"><%= post.text %></font></a>
 	  </td>
 	  
-      <td><%= link_to 'Show', post %></td>
-      <td><%= link_to 'Edit', edit_post_path(post) %></td>
-      <td><%= link_to 'Destroy', post_path(post), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <td><%= link_to 'Show', post,  class: 'btn btn-primary btn-xs' %></td>
+      <td>
+		  <%= link_to edit_post_path(post),  class: 'btn btn-info btn-xs' do %>
+		    <i class="glyphicon glyphicon-edit"></i> Edit
+		  <% end %>		  
+	  </td>
+      <td>
+	    <%= link_to  post_path(post), method: :delete, data: { confirm: 'Are you sure?' },  class: 'btn btn-danger btn-xs' do %>
+ 		  <i class="glyphicon glyphicon-remove"></i> Destroy
+		<% end %>		  
+	  </td>
     </tr>
   <% end %>
   </tbody>
 </table>
 
 <div>
-  <p><%= link_to 'New Post', new_post_path %> | <%= link_to "Home", controller: "welcome" %></p>
+  <!-- %= link_to 'New Post', new_post_path,  class: 'btn btn-success'  % --> 
+  <%= link_to root_path,  class: 'btn btn-success' do%>
+    <i class="glyphicon glyphicon-home"></i> Home
+  <% end %>        
+  | <%= link_to new_post_path, class: 'btn btn-success' do %>
+        <i class="glyphicon glyphicon-plus"></i> New Post
+      <% end %>	  
 </div>
